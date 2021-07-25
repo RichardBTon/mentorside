@@ -1,6 +1,11 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--hovedfarge);
 }
 
 :root {
@@ -12,14 +17,80 @@ body {
     --fontfarge: #000000;
 }
 
-h1 {
-    font-size: 5vw;
-    font-family: 'Montserrat', sans-serif;
+.header {
+    font-size: 5.5vw;
+    
+    font-weight: 30;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    
+
     color: var(--fontfarge);
     border: 1px black dashed;
+    margin: 10px 0;
+    padding: 0 5px;  
 }
 
 .wrapper {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
+    background-color: var(--sekundærfarge);
+    overflow: auto;
 }
+
+
+#profilbilde {
+    height: 30vw;
+    width: 20vw;
+
+    float: right;
+    margin: 10px;
+    /* margin-top: 10px; */
+}
+
+p {
+    padding: 7px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    display: block;
+    /* border: 1px black dashed; */
+    text-align: left;
+}
+/* 
+div {
+    border: 1px lightcoral dashed;
+} */
+
+section {
+    margin: 0 0;
+    padding: 0 5px;
+}
+
+table, td, th, tr {
+    text-align: center;
+    margin: auto;
+    /* border: 1px black solid;
+    border-collapse: collapse; */
+    padding: 5px;
+}
+
+th {
+    font-weight: 999;
+}
+
+td {
+    font-weight: lighter;
+}
+
+table {
+    width: 100%;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--hovedfarge);
+}
+table tr:nth-child(even) {
+    background-color: var(--sekundærfarge);
+}
+
