@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --hovedfarge:#65A1FA;
+    --sekundærfarge: #514FE3;
+    --c-farge: #4FC7E3;
+    --d-farge: #994DFF;
+    --e-farge: #58FBD5;
+    --fontfarge: #000000;
+}
+
+h1 {
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--fontfarge);
+    border: 1px black dashed;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
