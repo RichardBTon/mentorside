@@ -22,36 +22,25 @@ body {
 
 }
 
-.header {
-    font-size: 5.5vw;
-    
-    font-weight: 30;
-    text-transform: uppercase;
-    letter-spacing: 0.2vw;
-    
-    display: inline-block;
-    color: var(--fontfarge);
-    border-bottom: 2px black solid;
-    margin: 10px 0;
-    padding: 0 5px;
-    width: 40vw;
+section:nth-child(odd) {
+    background-color: var(--bakgrunnsfarge);
+}
+section:nth-child(even) {
+    background-color: var(--sekundærfarge);
 }
 
-
-
 .wrapper {
-    position: relative;
-    width: 75%;
+    /* position: relative; */
+    width: 90%;
     margin: 0 auto;
     /* background-color: var(--sekundærfarge); */
     overflow: auto;
 }
 
 
-
-
-p {
+.normalp {
     padding: 7px;
+    margin: 0 50px;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 2vw;
@@ -113,7 +102,7 @@ li {
     opacity: 0.6;
     z-index: 0;
   }
-
+/* 
 @media screen and (max-width: 600px) {
     .wrapper {
         width: 90%;
@@ -125,4 +114,4 @@ li {
     .wrapper {
         width: 1400px;
     }
-  }
+  } */
