@@ -1,15 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--hovedfarge);
-}
-
 :root {
+    --bakgrunnsfarge: #f5f6f8;
     --hovedfarge:#65A1FA;
     --sekundærfarge: #514FE3;
     --c-farge: #4FC7E3;
@@ -17,6 +7,22 @@ body {
     --e-farge: #58FBD5;
     --fontfarge: #000000;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+body {
+    background-color: var(--bakgrunnsfarge);
+
+}
+
+
 
 .header {
     font-size: 5.5vw;
@@ -31,6 +37,13 @@ body {
     margin: 10px 0;
     padding: 0 5px;
     width: 40vw;
+}
+
+.intro {
+    background-image: url(./bakgrunn.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .wrapper {
@@ -63,6 +76,7 @@ p {
     display: block;
     /* border: 1px black dashed; */
     text-align: left;
+    color: black;
 }
 /* 
 div {
@@ -115,15 +129,23 @@ li {
     border-radius: 50%;
     display: inline-block;
     opacity: 0.6;
-    z-index: -1;
+    z-index: 0;
   }
 
 #hovedsirkel {
     height: 80vw;
     width: 80vw;
     position: absolute;
-    top: 40px;
-    left: 0px;
+    top: 90px;
+    left: 50px;
+    z-index: -1;
+    background-color: var(--hovedfarge);
+}
+
+#bakgrunn {
+    width: 100vw;
+    position: absolute;
+    left: 0;
 }
 
 @media screen and (max-width: 600px) {
