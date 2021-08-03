@@ -22,8 +22,6 @@ body {
 
 }
 
-
-
 .header {
     font-size: 5.5vw;
     
@@ -39,12 +37,7 @@ body {
     width: 40vw;
 }
 
-.intro {
-    background-image: url(./bakgrunn.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-}
+
 
 .wrapper {
     position: relative;
@@ -55,18 +48,7 @@ body {
 }
 
 
-#profilbilde {
-    /* height: 30%; */
-    width: 40vw;
-    border-radius: 50%;
 
-    float: left;
-    margin: 10px;
-    background-image: url(./profilbilde.jpg);
-    background-position: initial;
-    /* background-repeat: no-repeat; */
-    /* margin-top: 10px; */
-}
 
 p {
     padding: 7px;
@@ -131,22 +113,6 @@ li {
     opacity: 0.6;
     z-index: 0;
   }
-
-#hovedsirkel {
-    height: 80vw;
-    width: 80vw;
-    position: absolute;
-    top: 90px;
-    left: 50px;
-    z-index: -1;
-    background-color: var(--hovedfarge);
-}
-
-#bakgrunn {
-    width: 100vw;
-    position: absolute;
-    left: 0;
-}
 
 @media screen and (max-width: 600px) {
     .wrapper {

@@ -1,0 +1,30 @@
+#profilbilde {
+    /* height: 30%; */
+    width: 40vw;
+    border-radius: 50%;
+
+    float: left;
+    margin: 10px;
+    background-image: url(./profilbilde.jpg);
+    background-position: initial;
+    /* background-repeat: no-repeat; */
+    /* margin-top: 10px; */
+}
+
+#hovedsirkel {
+    height: 80vw;
+    width: 80vw;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    z-index: -1;
+    background-color: var(--hovedfarge);
+}
+
+.intro {
+    background-image: url(./bakgrunn.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 40px;
+}
