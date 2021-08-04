@@ -1,9 +1,12 @@
 .intro {
     background-image: url(./bakgrunn.jpg);
     background-size: 100%;
+    /* width: 100%; */
     background-repeat: no-repeat;
     position: relative;
     padding-top: 80px;
+    /* overflow: hidden; */
+    height: 1000px;
 }
 
 /* #introsection {
@@ -52,12 +55,41 @@
     text-align: center;
 }
 
-@media screen and (min-width: 450px) {
+#introwrapper {
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+@media screen and (min-width: 600px) {
     .header {
-        font-size: 2em;
+        font-size: 3vw;
     }
 
     #introavsnitt {
-        font-size: 1em;
+        font-size: 1.5vw;
+    }
+
+    #hovedsirkel {
+        height: 40vw;
+        width: 40vw;
+        left: 20vw;
+        top: 10vw;
+    }
+
+    #profilbilde {
+        height: 20vw;
+        width: 20vw;
+        float: left;
+    }
+    
+    #introwrapper {
+        width: 60%;
+        padding-right: 10vw;
+    }
+
+    .intro {
+        padding-top: 50px;
+        height: 600px;
     }
   }

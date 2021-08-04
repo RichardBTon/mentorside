@@ -15,8 +15,8 @@
 <section id="introsection">
         <!-- <img id="bakgrunn" src="bakgrunn.jpg" alt="bakgrunnsbilde av bøker"> -->
 
-    <div class="intro" style="height: 600px;">
-        <div class="wrapper">
+    <div class="intro">
+        <div id="introwrapper">
             <img src="./profilbilde.jpg" id="profilbilde" alt="Profilbilde">
             <h1 class="header">Fattig student som privatlærer</h1>
             <!-- Må være kvadratisk! -->
@@ -66,6 +66,11 @@
             <a href="tel:+47 996 86 905">996 86 905</a>
             <a href="mailto:richard.btondel@gmail.com">richard.btondel@gmail.com</a>
         </section>
+<script>
+addEventListener("resize", () => {
+    console.log(window.innerWidth);
+})
 
+</script>
 </body>
 </html>

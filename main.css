@@ -19,7 +19,7 @@
 
 body {
     background-color: var(--bakgrunnsfarge);
-
+    padding: 0;
 }
 
 section:nth-child(odd) {
@@ -56,7 +56,7 @@ div {
 
 section {
     margin: 0 0;
-    padding: 0 5px;
+    /* padding: 0 5px; */
 }
 
 table, td, th, tr {
