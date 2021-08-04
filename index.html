@@ -8,12 +8,20 @@
     crossorigin="anonymous"
   ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./intro.css">
     <link rel="stylesheet" href="./tabell.css">
+
     <title>Privatlærer</title>
 </head>
 <body>
@@ -32,15 +40,18 @@
             <span class="sirkel" id="introsirkel"></span>
         </div>
 
-    </div>
+</div>
 
         </section>
-        
+
+<!-- Kan droppe wrapper og bare ha section med en bestemt bredde -->
+<div class="wrapper">
+
     <section>
-        <div class="wrapper">
+        
             <span class="sirkel" id="sirkel-4"></span>
             <h1 class="header">Hva kan jeg hjelpe med?</h1>
-            <p>Jeg har gått 3 år i forskerklassen som er en klasse for spesielt realfagsinteresserte. Jeg har derfor høyest kompetanse i realfag, og da spesielt fagene under.</p>
+            <p>Jeg kan lære </p>
 
             <h2>Fag jeg kan undervise i</h2>
             <ul>
@@ -51,29 +62,28 @@
                 <li>Alle obligatoriske fag</li>
             </ul>
             <p>*Inkludert nytt pensum med python</p>
-        </div>
     </section> 
         <section >
-            <div class="wrapper">
+            
 
                 <h1 class="header">Hvorfor meg?</h1>
                 <span id="sirkel-2" class="sirkel"></span>
 
                     <ul id="erfaring">
                         <li>Nettopp ferdig med skolen, så jeg har pensum friskt i minne</li>
-                        <li>Fordi jeg er et enkeltmannsforetak, kan jeg tilpasse meg enklere etter dine behov</li>
+                        <li>Fordi jeg er et enkeltmannsforetak, kan jeg prise meg lavere enn andre</li>
                         <li>Forskerklassen på Elvebakken VGS</li>
-                        <li>Forsert matte</li>
-                        <li>6 i alle fag unntatt nynorsk</li>
+                        <li>Forsert matte (matte med året over)</li>
+                        <li>6 i alle fagene jeg underviser i</li>
                         <li>Undervist i matte for yngre og jevngamle elever i 3. klasse på VGS</li>
                         <li>Erfaring som personlig lærer</li>
                     </ul>
                     <p>Bare ta kontakt hvis du vil ha noen referanser :) </p>                    
-            </div>
+
         </section>
 
         <section>
-            <div class="wrapper">
+            
                 <span id="sirkel-3" class="sirkel"></span>
                 <h1 class="header">Prissammenligning</h1>
                 <p>Bindingstid i parentes.</p>
@@ -81,25 +91,20 @@
 
                 <table id="desktoptabell">
                     <tr>
-                        <th>Meg (etter avtale)</th>
                         <td>Mentornorge (6 mnd)</td>
                         <td>Learnlink (1 mnd)</td>
                         <td>UNAK (20t)</td>
+                        <th>Meg (etter avtale)</th>
                     </tr>
                     <tr>
-                        <th>400kr/t</th>
                         <td>475kr/t</td>
                         <td>2990kr/mnd*</td>
                         <td>499kr/t</td>
+                        <th>400kr/t</th>
                     </tr>
                 </table>
 
                 <table id="mobiltabell">
-                        <tr>
-                            <th>Meg (etter avtale)</th>
-                            <th>400kr/t</th>
-                            
-                        </tr>
                         <tr>
                             <td>Mentornorge (6 mnd)</td>
                             <td>475kr/t</td>
@@ -109,21 +114,31 @@
                             <td>Learnlink (1 mnd)</td>
                             <td>2990kr/mnd*</td>
                         </tr>
-
                         <tr>
                             <td>UNAK (40 t)</td>
                             <td>499kr/t</td>
+                        </tr>
+                        <tr>
+                            <th>Meg (etter avtale)</th>
+                            <th>400kr/t</th>
+                            
                         </tr>
                         
                 </table>
 
                 <p>*Hos learnlink var det veldig vanskelig å finne timespris, det står i stedet at de skal lage "skreddersydd" utviklingsplan, noe som gjør det vanskelig å sammenligne med. Gjerne kontakt meg om du vet noe om pris per time.</p>
-            </div>
+
 
         </section>
 
+        <section>
+            
+
+
+        </section>
+    </div>
         <section id="kontaktsection">
-            <div class="wrapper">
+            
                 <h1 class="header">Kontakt</h1>
                 <ul id="kontakt">
                     <li><a href="tel:+47 996 86 905"><i class="fas fa-phone-alt contact-icons"></i
@@ -132,8 +147,9 @@
                         ><a href="mailto:richard.btondel@gmail.com"><i class="far fa-envelope-open contact-icons"></i>richard.btondel@gmail.com</a></li>
                 </ul>
 
-            </div>
+
         </section>
+
 
 </body>
 </html>

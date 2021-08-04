@@ -31,3 +31,26 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
     background-color: rgba(81, 79, 227, 0.8);
 }
+
+#mobiltabell {
+    display: table;
+}
+
+#desktoptabell {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    #mobiltabell {
+        display: none;
+    }
+    
+    #desktoptabell {
+        display: table;
+    }
+
+    table tr td, th{
+        padding: 30px;
+        font-size: 1.3em;
+    }
+}

@@ -50,21 +50,11 @@ h2 {
     
     display: block;
     color: var(--fontfarge);
-    /* border-bottom: 2px black solid; */
-    margin: 10px 0 15px 0;
-    /* padding-left: 10px; */
+
+    margin: 40px 0 15px 0;
     /* border: 1px lightcoral dashed; */
 
 }
-
-
-
-/* section:nth-child(odd) {
-    background-color: var(--bakgrunnsfarge);
-}
-section:nth-child(even) {
-    background-color: var(--sekundærfarge);
-} */
 
 .wrapper {
     width: 90%;
@@ -78,25 +68,7 @@ p {
     text-align: center;
 }
 
-/* 
-.normalp {
-    padding: 7px;
-    margin: 0 50px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
-    display: block;
-    border: 1px black dashed;
-    text-align: left;
-    color: black;
-} */
-/* 
-div {
-    border: 1px lightcoral dashed;
-} */
-
 section {
-    /* margin: 70px 0; */
     padding: 90px 0;
     position: relative;
 }
@@ -110,16 +82,6 @@ ul li {
     padding: 7px;
     padding-left: 0;
     list-style-type: square;
-    text-align: center;
-}
-
-
-#mobiltabell {
-    display: table;
-}
-
-#desktoptabell {
-    display: none;
 }
 
 #kontakt li {
@@ -131,6 +93,7 @@ ul li {
     color: #343333;
     font-size: 3vw;
 }
+
 #kontakt li a:hover {
     text-decoration: none;
 }
@@ -145,8 +108,7 @@ i {
 }
 
 .sirkel {
-
-    /* Kun midlertidig */
+    /* Kun midlertidig for at man skal kunne se den */
     background-color: lightcoral;
     width: 40px;
     height: 40px;
@@ -215,27 +177,16 @@ i {
         font-size: 1.6vw;
     }
 
-    #mobiltabell {
-        display: none;
-    }
-    
-    #desktoptabell {
-        display: table;
+    p {
+        margin-top: 40px;
+        font-size: 1.8vw;
     }
 
     #kontakt li a {
         font-size: 1em;
     }
 
-    p {
-        margin-top: 40px;
-        font-size: 1.8vw;
-    }
 
-    table tr td, th{
-        padding: 30px;
-        font-size: 1.3em;
-    }
   }
 
 /* 
