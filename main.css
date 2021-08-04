@@ -5,6 +5,7 @@
     --c-farge: #4FC7E3;
     --d-farge: #994DFF;
     --e-farge: #58FBD5;
+    --f-farge: #d0f1de;
     --fontfarge: #000000;
 }
 
@@ -22,7 +23,7 @@ body {
     padding: 0;
 }
 
-.header {
+h1 {
     font-size: 5.5vw;
     
     font-weight: 30;
@@ -39,6 +40,23 @@ body {
 
 }
 
+h2 {
+    font-size: 4vw;
+    
+    font-weight: 30;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    
+    display: block;
+    color: var(--fontfarge);
+    /* border-bottom: 2px black solid; */
+    margin: 10px 0 15px 0;
+    /* padding-left: 10px; */
+    /* border: 1px lightcoral dashed; */
+
+}
+
 
 
 /* section:nth-child(odd) {
@@ -49,10 +67,8 @@ section:nth-child(even) {
 } */
 
 .wrapper {
-    /* position: relative; */
     width: 90%;
     margin: 0 auto;
-    /* background-color: var(--sekundærfarge); */
     overflow: auto;
 }
 
@@ -62,7 +78,7 @@ p {
     text-align: center;
 }
 
-
+/* 
 .normalp {
     padding: 7px;
     margin: 0 50px;
@@ -70,10 +86,10 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 2vw;
     display: block;
-    /* border: 1px black dashed; */
+    border: 1px black dashed;
     text-align: left;
     color: black;
-}
+} */
 /* 
 div {
     border: 1px lightcoral dashed;
@@ -85,83 +101,18 @@ section {
     position: relative;
 }
 
-table, td, th, tr {
 
-    text-align: center;
-    /* margin: 5px; */
-    /* border: 1px black solid;
-    border-collapse: collapse; */
-}
-
-th {
-    font-weight: 999;
-}
-
-td {
-    font-weight: lighter;
-}
-
-table {
-    width: 100%;
-}
-
-tr {
-    width: 100%;
-}
-
-td, th {
-    padding: 20px;
-}
-table tr:nth-child(odd) {
-    background-color: rgba(101, 161, 250, 0.7);
-}
-table tr:nth-child(even) {
-    background-color: rgba(81, 79, 227, 0.8);
-}
 ul {
     text-align: center;
 }
-#erfaring li {
-    /* margin: 10px;
-    margin-left: 30px; */
+
+ul li {
     padding: 7px;
     padding-left: 0;
     list-style-type: square;
     text-align: center;
 }
 
-
-.sirkel {
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.6;
-    z-index: 0;
-    position: absolute;
-    z-index: -1;
-  }
-
-#sirkel-2 {
-    height: 50vw;
-    width: 50vw;
-    background-color: #9cac25;
-    background-color: var(--d-farge);
-    opacity: 0.3;
-    position: absolute;
-    left: 20px;
-    top: 40px;
-    z-index: -1;
-}
-
-#sirkel-3 {
-    height: 40vw;
-    width: 40vw;
-    top: 30px;
-    right: 40px;
-    background-color: #F0E68C;
-    background-color: #9cac25;
-    background-color: var(--c-farge);
-    opacity: 0.4;
-}
 
 #mobiltabell {
     display: table;
@@ -193,11 +144,52 @@ i {
     background-color: rgba(233, 207, 175, 0.3);
 }
 
+.sirkel {
+
+    /* Kun midlertidig */
+    background-color: lightcoral;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+  }
+
+#sirkel-2 {
+    height: 50vw;
+    width: 50vw;
+    background-color: #9cac25;
+    background-color: var(--d-farge);
+    opacity: 0.3;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: -1;
+}
+
+#sirkel-3 {
+    height: 40vw;
+    width: 40vw;
+    top: 30px;
+    right: 40px;
+    background-color: #F0E68C;
+    background-color: #9cac25;
+    background-color: var(--c-farge);
+    opacity: 0.4;
+}
+
+#sirkel-4 {
+    height: 40vw;
+    width: 40vw;
+    top: 50px;
+    right: 50px;
+    background-color: lightcoral;
+    opacity: 0.4;
+}
+
 @media screen and (min-width: 700px) {
-    .header {
-        font-size: 3.5vw;
-        /* font-size: 3em; */
-    }
 
     #sirkel-2 {
         height: 30vw;
@@ -209,6 +201,14 @@ i {
         height: 20vw;
         width: 20vw;
         right: 20vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 2vw;
     }
 
     li {
@@ -229,7 +229,7 @@ i {
 
     p {
         margin-top: 40px;
-        font-size: 1.4vw;
+        font-size: 1.8vw;
     }
 
     table tr td, th{

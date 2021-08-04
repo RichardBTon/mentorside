@@ -44,7 +44,7 @@
     shape-outside: margin-box;
 }
 
-#hovedsirkel {
+#introsirkel {
     height: 85vw;
     width: 85vw;
     position: absolute;
@@ -81,7 +81,7 @@
         line-height: 2vw;
     }
 
-    #hovedsirkel {
+    #introsirkel {
         height: 45vw;
         width: 45vw;
         left: 30vw;
