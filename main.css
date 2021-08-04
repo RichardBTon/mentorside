@@ -1,6 +1,6 @@
 :root {
     --bakgrunnsfarge: #f5f6f8;
-    --hovedfarge:#65A1FA;
+    --hovedfarge:#65a1fa;
     --sekundærfarge: #514FE3;
     --c-farge: #4FC7E3;
     --d-farge: #994DFF;
@@ -96,11 +96,15 @@ table {
     width: 100%;
 }
 
+tr {
+    width: 100%;
+}
+
 table tr:nth-child(odd) {
-    background-color: var(--hovedfarge);
+    background-color: rgba(101, 161, 250, 0.7);
 }
 table tr:nth-child(even) {
-    background-color: var(--sekundærfarge);
+    background-color: rgba(81, 79, 227, 0.8);
 }
 
 li {
@@ -134,19 +138,20 @@ li {
 #gul-sirkel {
     height: 40vw;
     width: 40vw;
-    top: -40px;
+    top: 0px;
     right: 40px;
     background-color: #F0E68C;
     opacity: 0.4;
 }
 
 #mobiltabell {
-    display: block;
+    display: table;
 }
 
 #desktoptabell {
     display: none;
 }
+
 @media screen and (min-width: 700px) {
     .header {
         font-size: 3.5vw;
@@ -167,6 +172,14 @@ li {
 
     li {
         font-size: 1.6vw;
+    }
+
+    #mobiltabell {
+        display: none;
+    }
+    
+    #desktoptabell {
+        display: table;
     }
   }
 
