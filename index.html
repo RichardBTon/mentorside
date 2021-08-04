@@ -3,6 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script
+    src="https://kit.fontawesome.com/bc409d636a.js"
+    crossorigin="anonymous"
+  ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -33,7 +38,7 @@
         <section >
             <h1 class="header">Erfaring & Utdanning</h1>
             <span id="grønn-sirkel" class="sirkel"></span>
-                <ul>
+                <ul id="erfaring">
                     <li>Studiespesialiserende i Forskerklassen på Elvebakken VGS</li>
                     <li>Forsert matte</li>
                     <li>6 i alle fag unntatt nynorsk</li>
@@ -90,11 +95,21 @@
 
         </section>
 
-        <section>
-            <h1 class="header">Kontakt</h1>
-            <a href="tel:+47 996 86 905">996 86 905</a>
-            <a href="mailto:richard.btondel@gmail.com">richard.btondel@gmail.com</a>
+        <section id="kontaktsection">
+            <div class="wrapper">
+                <h1 class="header">Kontakt</h1>
+                <ul id="kontakt">
+                    <li><a href="tel:+47 996 86 905"><i class="fas fa-phone-alt contact-icons"></i
+                        >996 86 905</a></li>
+                    <li></i
+                        ><a href="mailto:richard.btondel@gmail.com"><i class="far fa-envelope-open contact-icons"></i>richard.btondel@gmail.com</a></li>
+                        
+
+                </ul>
+
+            </div>
         </section>
+
 <script>
 addEventListener("resize", () => {
     console.log(window.innerWidth);
