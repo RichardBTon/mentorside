@@ -23,11 +23,11 @@
     <div class="intro">
         <div id="introwrapper">
             <img src="./profilbilde.jpg" id="profilbilde" alt="Profilbilde">
-            <h1 id="introheader">Fattig student som privatlærer</h1>
+            <h1 class="header" id="introheader">Fattig student som privatlærer</h1>
             <!-- Må være kvadratisk! -->
             
             <!-- <span id="profilbilde"></span> -->
-            <p id="introavsnitt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora repellat doloremque rem iste sit, alias id deleniti totam quam quisquam delectus. Nam autem praesentium dolor labore, ea nemo corporis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores placeat deserunt tempora, saepe enim accusamus voluptate. Ut repudiandae doloremque reiciendis modi dignissimos sed quas minima, quam sequi dolore veniam libero!</p>
+            <p id="introavsnitt">Hei, person som leter etter privatlærer til enten seg selv eller barnet sitt! Jeg heter Richard, har nettopp fullført 3 år med realfag i forskerklassen på Elvebakken VGS, og begynner på UiO 16. august. Fordi jeg nå kommer til å være fattig student en stund framover, tenkte jeg at jeg kunne bruke kompetansen jeg har opparbeidet meg etter 13 år med skolegang til å hjelpe andre, og tjene litt penger i samme slengen. Dette enkeltmannsforetaket er resultatet av den tanken. Fordi det, i motsetning til for eksempel hos learnlink eller mentornorge, ikke er noen mellommann mellom meg og deg, kan du få mer for pengene, og jeg kan prise meg lavere. Jeg har kun 6-ere på kortet, bortsett fra 5 i nynorsk, og mye erfraing fra læringssituasjoner som både elev og lærer. Jeg håper vi kan jobbe sammen!</p>
             <span class="sirkel" id="hovedsirkel"></span>
         </div>
 
@@ -36,61 +36,68 @@
         </section>
         
         <section >
-            <h1 class="header">Erfaring & Utdanning</h1>
-            <span id="grønn-sirkel" class="sirkel"></span>
-                <ul id="erfaring">
-                    <li>Studiespesialiserende i Forskerklassen på Elvebakken VGS</li>
-                    <li>Forsert matte</li>
-                    <li>6 i alle fag unntatt nynorsk</li>
-                    <li>Undervist i matte for yngre og gjevngamle elever i 3. klasse på VGS</li>
-                    <li>Undervist i 2-1 undervisning</li>
-                </ul>
+            <div class="wrapper">
 
-                
+                <h1 class="header">Hvorfor meg?</h1>
+                <span id="sirkel-2" class="sirkel"></span>
+
+                    <ul id="erfaring">
+                        <li>Nettopp ferdig med skolen, så jeg har pensum friskt i minne</li>
+                        <li>Fordi jeg er et enkeltmannsforetak, kan jeg tilpasse meg enklere etter dine behov</li>
+                        <li>Forskerklassen på Elvebakken VGS</li>
+                        <li>Forsert matte</li>
+                        <li>6 i alle fag unntatt nynorsk</li>
+                        <li>Undervist i matte for yngre og gjevngamle elever i 3. klasse på VGS</li>
+                        <li>Erfaring som personlig lærer</li>
+                    </ul>
+                    <p>Bare ta kontakt hvis du vil ha noen referanser :) </p>                    
+            </div>
         </section>
 
         <section>
             <div class="wrapper">
-                <span id="gul-sirkel" class="sirkel"></span>
+                <span id="sirkel-3" class="sirkel"></span>
                 <h1 class="header">Prissammenligning</h1>
+                <p>Bindingstid i parentes.</p>
                 <table id="desktoptabell">
                     <tr>
-                        <th>Meg</th>
-                        <td>Mentornorge</td>
-                        <td>Learnlink</td>
-                        <td>UNAK</td>
+                        <th>Meg (etter avtale)</th>
+                        <td>Mentornorge (6 mnd)</td>
+                        <td>Learnlink (1 mnd)</td>
+                        <td>UNAK (20t)</td>
                     </tr>
                     <tr>
                         <th>400kr/t</th>
-                        <td>400kr/t</td>
-                        <td>400kr/t</td>
-                        <td>400kr/t</td>
+                        <td>475kr/t</td>
+                        <td>2990kr/mnd*</td>
+                        <td>499kr/t</td>
                     </tr>
                 </table>
 
                 <table id="mobiltabell">
-                    <tr>
-                        <th>Meg</th>
-                        <th>400kr/t</th>
-                        
-                    </tr>
-                    <tr>
-                        <td>Mentornorge</td>
-                        <td>400kr/t</td>
+                        <tr>
+                            <th>Meg (etter avtale)</th>
+                            <th>400kr/t</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>Mentornorge (6 mnd)</td>
+                            <td>475kr/t</td>
                         
                         </tr>
                         <tr>
-                            <td>Learnlink</td>
-                            <td>400kr/t</td>
-                            
+                            <td>Learnlink (1 mnd)</td>
+                            <td>2990kr/mnd*</td>
                         </tr>
 
                         <tr>
-                            <td>UNAK</td>
-                            <td>400kr/t</td>
+                            <td>UNAK (40 t)</td>
+                            <td>499kr/t</td>
                         </tr>
                         
                 </table>
+
+                <p>*Hos learnlink var det veldig vanskelig å finne timespris, det står i stedet at de skal lage "skreddersydd" utviklingsplan, noe som gjør det vanskelig å sammenligne med. Gjerne kontakt meg om du vet noe om pris per time.</p>
             </div>
 
         </section>
@@ -103,18 +110,10 @@
                         >996 86 905</a></li>
                     <li></i
                         ><a href="mailto:richard.btondel@gmail.com"><i class="far fa-envelope-open contact-icons"></i>richard.btondel@gmail.com</a></li>
-                        
-
                 </ul>
 
             </div>
         </section>
 
-<script>
-addEventListener("resize", () => {
-    console.log(window.innerWidth);
-})
-
-</script>
 </body>
 </html>

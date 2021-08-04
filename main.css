@@ -36,7 +36,10 @@ body {
     margin: 0 0 15px 0;
     /* padding-left: 10px; */
     /* border: 1px lightcoral dashed; */
+
 }
+
+
 
 /* section:nth-child(odd) {
     background-color: var(--bakgrunnsfarge);
@@ -51,6 +54,12 @@ section:nth-child(even) {
     margin: 0 auto;
     /* background-color: var(--sekundærfarge); */
     overflow: auto;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 3.2vw;
+    text-align: center;
 }
 
 
@@ -79,10 +88,9 @@ section {
 table, td, th, tr {
 
     text-align: center;
-    margin: auto;
+    /* margin: 5px; */
     /* border: 1px black solid;
     border-collapse: collapse; */
-    padding: 5px;
 }
 
 th {
@@ -101,6 +109,9 @@ tr {
     width: 100%;
 }
 
+td, th {
+    padding: 20px;
+}
 table tr:nth-child(odd) {
     background-color: rgba(101, 161, 250, 0.7);
 }
@@ -111,8 +122,10 @@ ul {
     text-align: center;
 }
 #erfaring li {
-    margin: 3px;
-    margin-left: 30px;
+    /* margin: 10px;
+    margin-left: 30px; */
+    padding: 7px;
+    padding-left: 0;
     list-style-type: square;
     text-align: center;
 }
@@ -127,23 +140,26 @@ ul {
     z-index: -1;
   }
 
-#grønn-sirkel {
+#sirkel-2 {
     height: 50vw;
     width: 50vw;
     background-color: #9cac25;
+    background-color: var(--d-farge);
     opacity: 0.3;
     position: absolute;
     left: 20px;
     top: 40px;
-    z-index: 0;
+    z-index: -1;
 }
 
-#gul-sirkel {
+#sirkel-3 {
     height: 40vw;
     width: 40vw;
-    top: 0px;
+    top: 30px;
     right: 40px;
     background-color: #F0E68C;
+    background-color: #9cac25;
+    background-color: var(--c-farge);
     opacity: 0.4;
 }
 
@@ -155,9 +171,6 @@ ul {
     display: none;
 }
 
-#kontakt {
-    /* border: 1px lightcoral dashed; */
-}
 #kontakt li {
     list-style-type: none;
     padding: 5px;
@@ -165,8 +178,6 @@ ul {
 
 #kontakt li a {
     color: #343333;
-    /* color: #5959f4; */
-    
     font-size: 3vw;
 }
 #kontakt li a:hover {
@@ -179,7 +190,7 @@ i {
 
 #kontaktsection {
     padding: 30px 0 30px 0;
-    background-color: rgba(233, 207, 175, 0.7);
+    background-color: rgba(233, 207, 175, 0.3);
 }
 
 @media screen and (min-width: 700px) {
@@ -188,13 +199,13 @@ i {
         /* font-size: 3em; */
     }
 
-    #grønn-sirkel {
+    #sirkel-2 {
         height: 30vw;
         width: 30vw;
         left: 15vw;
     }
 
-    #gul-sirkel {
+    #sirkel-3 {
         height: 20vw;
         width: 20vw;
         right: 20vw;
@@ -214,6 +225,16 @@ i {
 
     #kontakt li a {
         font-size: 1em;
+    }
+
+    p {
+        margin-top: 40px;
+        font-size: 1.4vw;
+    }
+
+    table tr td, th{
+        padding: 30px;
+        font-size: 1.3em;
     }
   }
 

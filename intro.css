@@ -28,7 +28,7 @@
     display: block;
     color: var(--fontfarge);
     /* border-bottom: 2px black solid; */
-    margin: 90px 0 15px;
+    margin: 50px 0 15px;
     padding-left: 10px;
 }
 
@@ -37,11 +37,11 @@
     width: 40vw;
     border-radius: 50%;
     float: right;
-    /* margin: 5px; */
+    margin: 5px;
     /* background-image: url(./profilbilde.jpg); */
     /* background-size: contain; */
     shape-outside: circle();
-    shape-outside: padding-box;
+    shape-outside: margin-box;
 }
 
 #hovedsirkel {
@@ -59,6 +59,7 @@
     font-size: 3.2vw;
     margin: 0 20px 0 15px;
     text-align: center;
+
 }
 
 #introwrapper {
@@ -74,9 +75,10 @@
     }
 
     #introavsnitt {
-        font-size: 1.7vw;
+        font-size: 1.2em;
         /* font-size: 1.5em; */
         /* padding: 10px; */
+        line-height: 2vw;
     }
 
     #hovedsirkel {
@@ -103,4 +105,5 @@
         padding-top: 12vw;
         height: 60vw;
     }
+
   }
