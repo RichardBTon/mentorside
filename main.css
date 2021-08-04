@@ -22,12 +22,27 @@ body {
     padding: 0;
 }
 
-section:nth-child(odd) {
+.header {
+    font-size: 5.5vw;
+    
+    font-weight: 30;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    
+    display: block;
+    color: var(--fontfarge);
+    /* border-bottom: 2px black solid; */
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* section:nth-child(odd) {
     background-color: var(--bakgrunnsfarge);
 }
 section:nth-child(even) {
     background-color: var(--sekundærfarge);
-}
+} */
 
 .wrapper {
     /* position: relative; */
@@ -55,8 +70,9 @@ div {
 } */
 
 section {
-    margin: 0 0;
-    /* padding: 0 5px; */
+    /* margin: 70px 0; */
+    padding: 90px 0;
+    position: relative;
 }
 
 table, td, th, tr {
@@ -91,25 +107,70 @@ li {
     margin: 3px;
     margin-left: 30px;
     list-style-type: square;
+    text-align: center;
 }
 
 
 .sirkel {
-
-    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     opacity: 0.6;
     z-index: 0;
+    position: absolute;
+    z-index: -1;
   }
-/* 
-@media screen and (max-width: 600px) {
-    .wrapper {
-        width: 90%;
+
+#grønn-sirkel {
+    height: 50vw;
+    width: 50vw;
+    background-color: #9cac25;
+    opacity: 0.3;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: 0;
+}
+
+#gul-sirkel {
+    height: 40vw;
+    width: 40vw;
+    top: -40px;
+    right: 40px;
+    background-color: #F0E68C;
+    opacity: 0.4;
+}
+
+#mobiltabell {
+    display: block;
+}
+
+#desktoptabell {
+    display: none;
+}
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: 3.5vw;
+        /* font-size: 3em; */
+    }
+
+    #grønn-sirkel {
+        height: 30vw;
+        width: 30vw;
+        left: 15vw;
+    }
+
+    #gul-sirkel {
+        height: 20vw;
+        width: 20vw;
+        right: 20vw;
+    }
+
+    li {
+        font-size: 1.6vw;
     }
   }
 
-
+/* 
 @media screen and (min-width: 1500px) {
     .wrapper {
         width: 1400px;

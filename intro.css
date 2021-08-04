@@ -6,14 +6,18 @@
     position: relative;
     padding-top: 80px;
     /* overflow: hidden; */
-    height: 1000px;
+    height: 100vw;
+    z-index: 0;
+
 }
 
-/* #introsection {
-    height: 600px;
-} */
 
-.header {
+#introsection {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#introheader {
     font-size: 5.5vw;
     
     font-weight: 30;
@@ -33,10 +37,11 @@
     width: 40vw;
     border-radius: 50%;
     float: right;
-    margin: 5px;
-    background-image: url(./profilbilde.jpg);
-    background-size: contain;
+    /* margin: 5px; */
+    /* background-image: url(./profilbilde.jpg); */
+    /* background-size: contain; */
     shape-outside: circle();
+    shape-outside: padding-box;
 }
 
 #hovedsirkel {
@@ -47,6 +52,7 @@
     left: 40px;
     z-index: -1;
     background-color: var(--hovedfarge);
+    opacity: 0.6;
 }
 
 #introavsnitt {
@@ -61,35 +67,40 @@
     overflow: auto;
 }
 
-@media screen and (min-width: 600px) {
-    .header {
-        font-size: 3vw;
+@media screen and (min-width: 700px) {
+#introheader {
+        font-size: 3.5vw;
+        /* font-size: 3em; */
     }
 
     #introavsnitt {
-        font-size: 1.5vw;
+        font-size: 1.7vw;
+        /* font-size: 1.5em; */
+        /* padding: 10px; */
     }
 
     #hovedsirkel {
-        height: 40vw;
-        width: 40vw;
-        left: 20vw;
-        top: 10vw;
+        height: 45vw;
+        width: 45vw;
+        left: 30vw;
+        top: 150px;
     }
 
     #profilbilde {
-        height: 20vw;
-        width: 20vw;
+        height: 22vw;
+        width: 22vw;
         float: left;
+        margin-top: 50px;
+        /* padding: 20px; */
     }
     
     #introwrapper {
-        width: 60%;
+        width: 80%;
         padding-right: 10vw;
     }
 
     .intro {
-        padding-top: 50px;
-        height: 600px;
+        padding-top: 12vw;
+        height: 60vw;
     }
   }
