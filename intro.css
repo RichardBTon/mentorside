@@ -103,6 +103,7 @@
     #introwrapper {
         width: 80%;
         padding-right: 9vw;
+        /* max-width: 1400px; */
     }
 
     .intro {
@@ -111,3 +112,7 @@
     }
 
   }
+
+@media screen and (max-width: 1400px) {
+    
+}

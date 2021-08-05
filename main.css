@@ -13,7 +13,6 @@
     --fontfarge: #000000;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -226,7 +225,7 @@ i {
     }
 
     .fotnote {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
     #kontakt li a {
@@ -244,9 +243,14 @@ i {
 
 }
 
-/* 
+
 @media screen and (min-width: 1500px) {
-    .wrapper {
-        width: 1400px;
+    .tallsirkel {
+        height: 7vw;
+        width: 7vw;
     }
-  } */
+
+    .tallsirkel h3 {
+        font-size: 1.6vw;
+    }
+  }
