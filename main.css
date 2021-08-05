@@ -1,9 +1,13 @@
 :root {
-    --bakgrunnsfarge: #f5f6f8;
+    /* --bakgrunnsfarge: #f5f6f8; */
+    /* --bakgrunnsfarge: #ecf0f1; */
+    --bakgrunnsfarge: linear-gradient(to right, #f5f9fa , #eef2f3);
+
+
     --hovedfarge:#65a1fa;
     --sekundærfarge: #514FE3;
     --c-farge: #4FC7E3;
-    --d-farge: #994DFF;
+    --d-farge: hsl(266, 100%, 65%);
     --e-farge: #58FBD5;
     --f-farge: #d0f1de;
     --fontfarge: #000000;
@@ -19,7 +23,7 @@
 }
 
 body {
-    background-color: var(--bakgrunnsfarge);
+    background-image: var(--bakgrunnsfarge);
     padding: 0;
 }
 
@@ -68,6 +72,10 @@ p {
     text-align: center;
 }
 
+.fotnote {
+    font-size: 3.2vw;
+}
+
 section {
     padding: 90px 0;
     position: relative;
@@ -94,7 +102,6 @@ ul li {
 .steg {
     /* border: 1px solid blue; */
     margin: 15px auto;
-    /* text-align: center; */
 }
 
 .tallsirkel {
@@ -179,8 +186,8 @@ i {
 }
 
 #sirkel-4 {
-    height: 40vw;
-    width: 40vw;
+    height: 37vw;
+    width: 37vw;
     top: 50px;
     right: 50px;
     background-color: lightcoral;
@@ -218,6 +225,10 @@ i {
         font-size: 1.8vw;
     }
 
+    .fotnote {
+        font-size: 1vw;
+    }
+
     #kontakt li a {
         font-size: 1em;
     }
@@ -229,6 +240,8 @@ i {
     .steg {
         margin-top: 0;
     }
+
+
 }
 
 /* 

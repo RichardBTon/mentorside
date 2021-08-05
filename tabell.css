@@ -23,11 +23,13 @@ tr {
 }
 
 td, th {
-    padding: 20px;
+    padding: 15px;
 }
+
 table tr:nth-child(odd) {
     background-color: rgba(101, 161, 250, 0.7);
 }
+
 table tr:nth-child(even) {
     background-color: rgba(81, 79, 227, 0.8);
 }
@@ -50,7 +52,7 @@ table tr:nth-child(even) {
     }
 
     table tr td, th{
-        padding: 30px;
+        padding: 20px;
         font-size: 1.3em;
     }
 }
