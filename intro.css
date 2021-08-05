@@ -113,6 +113,44 @@
 
   }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
+        #introheader {
+        font-size: calc(0.035*var(--max-width));
+        /* border: 1px solid blue; */
+        /* font-size: 3em; */
+    }
+
+    #introavsnitt {
+        font-size: calc(0.017*var(--max-width));
+        padding-left: calc(0.20*var(--max-width));
+        /* font-size: 1.5em; */
+        /* line-height:calc(0. 2*var(--max-width)); */
+    }
+
+    #introsirkel {
+        height: calc(0.45*var(--max-width));
+        width: calc(0.45*var(--max-width));
+        left: 15vw;
+        top: 150px;
+    }
+
+    #profilbilde {
+        height: calc(0.22*var(--max-width));
+        width: calc(0.22*var(--max-width));
+        float: left;
+        margin-top: 40px;
+        margin-left: 40px;
+        /* padding: 20px; */
+    }
     
+    #introwrapper {
+        width: calc(0.8*var(--max-width));
+        padding-right:calc(0. 9*var(--max-width));
+        /* max-width: 1400px; */
+    }
+
+    .intro {
+        padding-top: calc(0.12*var(--max-width));
+        height: calc(0.50*var(--max-width));
+    }
 }

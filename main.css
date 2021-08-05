@@ -1,8 +1,9 @@
 :root {
+
+    --max-width: 1400px;
     /* --bakgrunnsfarge: #f5f6f8; */
     /* --bakgrunnsfarge: #ecf0f1; */
     --bakgrunnsfarge: linear-gradient(to right, #f5f9fa , #eef2f3);
-
 
     --hovedfarge:#65a1fa;
     --sekundærfarge: #514FE3;
