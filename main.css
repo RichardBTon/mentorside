@@ -60,6 +60,11 @@ h2 {
 
 }
 
+section {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -148,6 +153,7 @@ i {
 #kontaktsection {
     padding: 30px 0 30px 0;
     background-color: rgba(233, 207, 175, 0.3);
+    max-width: 100%;
 }
 
 .sirkel {
@@ -197,19 +203,27 @@ i {
 @media screen and (min-width: 700px) {
 
     #sirkel-2 {
-        height: 30vw;
-        width: 30vw;
-        left: 15vw;
+        height: calc(0.30 * var(--max-width));
+        width: calc(0.30 * var(--max-width));
+        left: calc(0.15 * var(--max-width));
     }
 
     #sirkel-3 {
-        height: 20vw;
-        width: 20vw;
-        right: 20vw;
+        height: calc(0.20 * var(--max-width));
+        width: calc(0.20 * var(--max-width));
+        right: calc(0.20 * var(--max-width));
     }
 
+    #sirkel-4 {
+    height: calc(0.37*var(--max-width));
+    width: calc(0.37*var(--max-width));
+    top: 50px;
+    right: 50px;
+
+}
+
     h1 {
-        font-size: 3.5vw;
+        font-size: calc(0.035*var(--max-width));
     }
 
     h2 {
@@ -222,11 +236,11 @@ i {
 
     p {
         margin-top: 40px;
-        font-size: 1.8vw;
+        font-size: calc(0.018*var(--max-width));
     }
 
     .fotnote {
-        font-size: 1.5vw;
+        font-size: calc(0.015*var(--max-width));
     }
 
     #kontakt li a {
@@ -245,13 +259,13 @@ i {
 }
 
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
     .tallsirkel {
-        height: 7vw;
-        width: 7vw;
+        height: calc(0.07*var(--max-width));
+        width: calc(0.07*var(--max-width));
     }
 
     .tallsirkel h3 {
-        font-size: 1.6vw;
+        font-size: calc(0.016*var(--max-width));
     }
   }
