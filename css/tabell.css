@@ -52,7 +52,7 @@ table tr:nth-child(even) {
     }
 
     table tr td, th{
-        padding: 20px;
+        padding: 10px;
         font-size: 1.3em;
     }
 }
