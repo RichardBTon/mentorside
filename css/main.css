@@ -1,6 +1,4 @@
 :root {
-  /* --bakgrunnsfarge: #f5f6f8; */
-  /* --bakgrunnsfarge: #ecf0f1; */
   --bakgrunnsfarge: linear-gradient(to right, #f5f9fa, #eef2f3);
 
   --hovedfarge: #65a1fa;
@@ -35,10 +33,7 @@ h1 {
 
   display: block;
   color: var(--fontfarge);
-  /* border-bottom: 2px black solid; */
   margin: 0 0 20px 0;
-  /* padding-left: 10px; */
-  /* border: 1px lightcoral dashed; */
 }
 
 h2 {
@@ -53,13 +48,11 @@ h2 {
   color: var(--fontfarge);
 
   margin: 40px 0 15px 0;
-  /* border: 1px lightcoral dashed; */
 }
 
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  /* overflow: auto; */
 }
 
 p {
@@ -91,39 +84,9 @@ ul li {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 4px;
-  /* border: blue 1px solid; */
-}
-
-#vitnemål {
-  width: 100%;
-}
-
-#modal {
-  position: fixed;
-  display: none;
-  /* height: 100px; */
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 4;
-  left: 0;
-  top: 0;
-}
-
-#modalimg {
-  display: block;
-  margin: 10% auto;
-  width: 90%;
-  max-width: 400px;
-}
-
-.hvorfor-meg {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .steg {
-  /* border: 1px solid blue; */
   margin: 15px auto;
 }
 
@@ -136,8 +99,6 @@ ul li {
   width: 70px;
 
   border-radius: 50%;
-
-  /* border: blue 1px solid; */
 }
 
 .tallsirkel h3 {
@@ -146,7 +107,6 @@ ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* border: blue 1px solid; */
 }
 
 #kontakt li {
@@ -250,13 +210,10 @@ i {
     font-size: 1vw;
   }
 
-  .hvorfor-meg {
-    grid-template-columns: 3fr 1fr;
-  }
-
+  /* 
   #modalimg {
     width: 40%;
-  }
+  } */
 
   #kontakt li a {
     font-size: 1em;
@@ -270,10 +227,3 @@ i {
     margin-top: 0;
   }
 }
-
-/* 
-@media screen and (min-width: 1500px) {
-    .wrapper {
-        width: 1400px;
-    }
-  } */
