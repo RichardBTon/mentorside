@@ -1,13 +1,13 @@
 
-const vitnemål = document.querySelector("#vitnemål");
+const vitnemålbtn = document.querySelector("#vitnemålbtn");
 const modal = document.querySelector("#modal");
 
 
 
 
-function displayModal() {
+function displayModal(e) {
+    e.preventDefault()
     modal.style.display = "block"
-    
 }
 
 function hideModal(e) {
@@ -19,5 +19,5 @@ function hideModal(e) {
     }
 }
 
-vitnemål.addEventListener("click", displayModal)
+vitnemålbtn.addEventListener("click", displayModal)
 window.addEventListener("click", hideModal)

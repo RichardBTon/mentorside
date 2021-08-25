@@ -112,8 +112,9 @@ ul li {
 
 #modalimg {
   display: block;
-  margin: 15% auto;
-  width: 40%;
+  margin: 10% auto;
+  width: 90%;
+  max-width: 400px;
 }
 
 .hvorfor-meg {
@@ -253,8 +254,8 @@ i {
     grid-template-columns: 3fr 1fr;
   }
 
-  #vitnemål {
-    width: 70%;
+  #modalimg {
+    width: 40%;
   }
 
   #kontakt li a {
