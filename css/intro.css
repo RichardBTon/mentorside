@@ -1,0 +1,109 @@
+.intro {
+  background-image: url(../bilder/bakgrunn.jpg);
+  background-size: 100%;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 80px;
+  /* overflow: hidden; */
+  height: 90vw;
+  z-index: 0;
+}
+
+#introsection {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#introheader {
+  font-size: 5.5vw;
+
+  font-weight: 30;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  text-align: center;
+
+  display: block;
+  color: var(--fontfarge);
+  /* border-bottom: 2px black solid; */
+  margin: 50px 0 15px;
+  /* padding-left: 10px; */
+  padding-top: 8vw;
+}
+
+#profilbilde {
+  height: 40vw;
+  width: 40vw;
+  border-radius: 50%;
+  float: right;
+  margin: 5px;
+  /* background-image: url(./profilbilde.jpg); */
+  /* background-size: contain; */
+  shape-outside: circle();
+  shape-outside: margin-box;
+}
+
+#introsirkel {
+  height: 75vw;
+  width: 75vw;
+  position: absolute;
+  top: 110px;
+  left: 40px;
+  z-index: -1;
+  background-color: var(--hovedfarge);
+  opacity: 0.6;
+}
+
+#introavsnitt {
+  font-size: 3.2vw;
+  margin: 0 20px 0 15px;
+  text-align: center;
+  padding-top: 2vw;
+}
+
+#introwrapper {
+  /* width: 90%; */
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media screen and (min-width: 700px) {
+  #introheader {
+    font-size: 3.5vw;
+    /* border: 1px solid blue; */
+    /* font-size: 3em; */
+  }
+
+  #introavsnitt {
+    font-size: 1.7vw;
+    padding-left: 20vw;
+    /* font-size: 1.5em; */
+    /* line-height: 2vw; */
+  }
+
+  #introsirkel {
+    height: 45vw;
+    width: 45vw;
+    left: 30vw;
+    top: 150px;
+  }
+
+  #profilbilde {
+    height: 22vw;
+    width: 22vw;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    /* padding: 20px; */
+  }
+
+  #introwrapper {
+    width: 80%;
+    padding-right: 9vw;
+  }
+
+  .intro {
+    padding-top: 12vw;
+    height: 50vw;
+  }
+}

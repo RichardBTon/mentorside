@@ -18,11 +18,11 @@
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./intro.css">
-    <link rel="stylesheet" href="./tabell.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/tabell.css">
 
-    <title>Privatlærer</title>
+    <title>Realfagslærer</title>
 </head>
 <body>
     
@@ -32,13 +32,11 @@
     <div class="intro">
         <div id="introwrapper">
             <!-- Profilbilde må være kvadratisk! -->
-            <img src="./profilbilde.jpeg" id="profilbilde" alt="Profilbilde">
+            <img src="./bilder/profilbilde.jpeg" id="profilbilde" alt="Profilbilde">
 
             <h1 class="header" id="introheader">Hjelp med realfag?</h1>
             
             <p id="introavsnitt"> Hei! Jeg heter Richard og er nettopp ferdig med 13 års skolegang hvorav de tre siste var i forskerklassen på Elvebakken VGS. Jeg har mye erfraing fra læringssituasjoner som både elev og lærer, og elsker å lære bort!</p>
-
-            <!-- Hei person som leter etter privatlærer til enten seg selv eller barnet sitt! Jeg heter Richard, har nettopp fullført 3 år med realfag i forskerklassen på Elvebakken VGS, og begynner på UiO 16. august. Fordi jeg nå kommer til å være fattig student en stund framover, tenkte jeg at jeg kunne bruke kompetansen jeg har opparbeidet meg etter 13 år med skolegang til å hjelpe andre, og tjene litt penger i samme slengen. Dette enkeltmannsforetaket er resultatet av den tanken. Fordi det, i motsetning til for eksempel hos learnlink eller mentornorge, ikke er noen mellommann mellom meg og deg, kan du få mer for pengene, og jeg kan prise meg lavere. -->
 
             <span class="sirkel" id="introsirkel"></span>
         </div>
@@ -59,31 +57,34 @@
 
             <h2>Fag jeg kan undervise i</h2>
             <ul>
-                <li>Matte: 1T*, R1, R2, S1, S2</li>
+                <li>Matte*: 1T, R1, R2, S1, S2</li>
                 <li>Fysikk 1 & 2</li>
                 <li>Kjemi 1</li>
                 <li>IT 2 & PMX</li>
                 <li>Alle obligatoriske fag</li>
             </ul>
-            <p>*Inkludert nytt pensum med programmering i python</p>
+            <p class="fotnote">*Inkludert nytt pensum med programmering i python</p>
     </section> 
         <section >
             
 
-                <h1 class="header">Hvorfor meg?</h1>
+                
                 <span id="sirkel-2" class="sirkel"></span>
 
-                    <ul id="erfaring">
-                        <li>Nettopp ferdig med skolen, så jeg har pensum friskt i minne</li>
-                        <li>Gått i forskerklassen på Elvebakken VGS</li>
-                        <li>6 i alle fagene jeg underviser i</li>
-                        <li>Erfaring som personlig lærer</li>
-                        <li>Erfaring som lærer i matte for yngre og jevngamle elever i 3. klasse på VGS i regi av skolen</li>
-                        <li>Fordi jeg er et enkeltmannsforetak, kan jeg prise meg lavere enn selskapene</li>
-                    </ul>
-                    <p class="fotnote">Bare ta kontakt hvis du vil ha noen referanser :)</p>                    
-
+                        <h1 class="header">Hvorfor meg?</h1>
+                        <ul id="erfaring">
+                            <li>Nettopp ferdig med skolen, så jeg har pensum friskt i minne</li>
+                            <li>Gått i forskerklassen på Elvebakken VGS</li>
+                            <li>6 i alle fagene jeg underviser i</li>
+                            <li>Erfaring som personlig lærer</li>
+                            <li>Erfaring som lærer i matte for yngre og jevngamle elever i 3. klasse på VGS i regi av skolen</li>
+                            <li>Fordi jeg er et enkeltmannsforetak, kan jeg prise meg lavere enn selskapene</li>
+                        </ul>
+                        <p class="fotnote">Bare ta kontakt hvis du vil ha noen referanser :)</p> 
+                    </div>
+            
         </section>
+
 
         <section>
             
@@ -92,9 +93,10 @@
                 <p>Bindingstid i parentes.</p>
 
 
+                <!-- Kan lage tabell med JS i steden... -->
                 <table id="desktoptabell">
                     <tr>
-                        <td>Mentornorge (6 mnd)</td>
+                        <td>Mentornorge (6 mnd / 48 t)</td>
                         <td>Learnlink (1 mnd)</td>
                         <td>UNAK (20t)</td>
                         <th>Meg (etter avtale)</th>
@@ -103,13 +105,13 @@
                         <td>475kr/t</td>
                         <td>2990kr/mnd*</td>
                         <td>499kr/t</td>
-                        <th>400kr/t</th>
+                        <th>349kr/t</th>
                     </tr>
                 </table>
 
                 <table id="mobiltabell">
                         <tr>
-                            <td>Mentornorge (6 mnd)</td>
+                            <td>Mentornorge (6 mnd / 48 t)</td>
                             <td>475kr/t</td>
                         
                         </tr>
@@ -123,7 +125,7 @@
                         </tr>
                         <tr>
                             <th>Meg (etter avtale)</th>
-                            <th>400kr/t</th>
+                            <th>349kr/t</th>
                             
                         </tr>
                         
@@ -172,6 +174,6 @@
 
         </section>
 
-
+<script src="./bildedisplay.js"></script>
 </body>
 </html>
