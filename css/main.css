@@ -3,7 +3,6 @@
     /* --bakgrunnsfarge: #ecf0f1; */
     --bakgrunnsfarge: linear-gradient(to right, #f5f9fa , #eef2f3);
 
-
     --hovedfarge:#65a1fa;
     --sekundærfarge: #514FE3;
     --c-farge: #4FC7E3;
@@ -99,6 +98,15 @@ ul li {
     /* border: blue 1px solid; */
 }
 
+.vitnemål {
+    width: 100%;
+}
+
+.hvorfor-meg {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
 .steg {
     /* border: 1px solid blue; */
     margin: 15px auto;
@@ -134,7 +142,7 @@ ul li {
 
 #kontakt li a {
     color: #343333;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 #kontakt li a:hover {
@@ -146,7 +154,7 @@ i {
 }
 
 #kontaktsection {
-    padding: 30px 0 30px 0;
+    padding: 20px 0 30px 0;
     background-color: rgba(233, 207, 175, 0.3);
 }
 
